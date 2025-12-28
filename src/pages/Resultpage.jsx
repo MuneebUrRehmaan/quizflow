@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 
-const ResultPage = () => {
+const Resultpage = () => {
   const location = useLocation();
   const state = location.state || null;
 
@@ -77,4 +77,4 @@ const ResultPage = () => {
   );
 };
 
-export default ResultPage;
+export default Resultpage;
