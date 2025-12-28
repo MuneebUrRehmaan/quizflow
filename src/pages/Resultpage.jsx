@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation, Link, Navigate } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const ResultPage = () => {
   const location = useLocation();
