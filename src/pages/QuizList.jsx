@@ -113,7 +113,7 @@ const QuizList = () => {
                     <span className="text-sm text-gray-300 font-bold">20 Qs</span>
                   </div>
                   <Link
-                    to={`quizflow/quiz/${quiz.id}`}
+                    to={`/quiz/${quiz.id}`}
                      onClick={()=>{hash()}}
                     className="bg-[#22c55e] text-gray-100 px-5 py-2.5 rounded-xl text-xs font-black uppercase hover:bg-[#16a34a] hover:scale-105 active:scale-95 transition-all shadow-lg"
                   >

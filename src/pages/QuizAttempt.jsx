@@ -73,7 +73,7 @@ const QuizAttempt = () => {
     });
 
     setTimeout(() => {
-      navigate('quizflow/result', { state: { result, quiz } });
+      navigate('/result', { state: { result, quiz } });
     }, 800);
   };
 

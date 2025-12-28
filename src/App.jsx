@@ -17,8 +17,8 @@ const App = () => {
         <Routes>
           <Route path="quizflow/" element={<Home />} />
           <Route path="quizflow/quizzes" element={<QuizList />} />
-          <Route path="quizflow/quiz/:id" element={<QuizAttempt />} />
-          <Route path="quizflow/result" element={<ResultPage />} />
+          <Route path="/quiz/:id" element={<QuizAttempt />} />
+          <Route path="/result" element={<ResultPage />} />
         </Routes>
         
 
