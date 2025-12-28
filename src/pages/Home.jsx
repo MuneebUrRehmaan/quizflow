@@ -41,7 +41,7 @@ const Home = () => {
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <Link 
-            to="quizflow/quizzes" 
+            to="/quizflow/quizzes" 
             className="w-full sm:w-auto px-8 py-4 bg-[#22c55e] text-slate-950 rounded-2xl font-semibold text-xl hover:bg-[#16a34a]  active:scale-95 transition-all shadow-[0_20px_50px_rgba(34,197,94,0.3)]"
           >
             Launch Quiz Library
@@ -149,7 +149,7 @@ const Home = () => {
                   <span key={tag} className="px-4 py-1.5 bg-white/5 rounded-full text-xs font-bold text-gray-400 border border-white/10 uppercase tracking-widest">{tag}</span>
                 ))}
               </div>
-              <Link to="quizflow/quizzes" className=" flex items-center  gap-2">
+              <Link to="/quizflow/quizzes" onClick={()=>{hash()}} className=" flex items-center  gap-2">
                 <button className='cursor-pointer hover:underline text-[#22c55e] font-black uppercase tracking-widest'>Explore Track</button> <span className="text-xl text-[#22c55e] mb-1.25">→</span>
               </Link>
             </div>
@@ -167,7 +167,7 @@ const Home = () => {
                   <span key={tag} className="px-4 py-1.5 bg-white/5 rounded-full text-xs font-bold text-gray-400 border border-white/10 uppercase tracking-widest">{tag}</span>
                 ))}
               </div>
-              <Link to="quizflow/quizzes" className=" flex items-center gap-2">
+              <Link to="/quizflow/quizzes" onClick={()=>{hash()}} className=" flex items-center gap-2">
                 <button className='text-[#38bdf8] font-black uppercase tracking-widest hover:underline cursor-pointer'>Explore Track</button> <span className="text-lg mb-1.25 text-[#38bdf8] ">→</span>
               </Link>
             </div>
@@ -185,7 +185,7 @@ const Home = () => {
           <p className="text-[#020617]/70 text-xl font-bold mb-6 max-w-2xl mx-auto">No friction. No logins. No excuses. Start your first 20-question challenge today.</p>
           
           <Link 
-            to="quizflow/quizzes" 
+            to="/quizflow/quizzes" 
             onClick={()=>{hash()}}
             className="inline-block px-6 py-3 bg-[#020617] text-white rounded-4xl font-black text-xl hover:scale-105 active:scale-95 transition-all shadow-2xl"
           >

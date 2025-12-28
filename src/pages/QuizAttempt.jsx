@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { quizService } from '../services/quizService';
 
 const QuizAttempt = () => {
@@ -72,9 +72,11 @@ const QuizAttempt = () => {
       percentage
     });
 
-    setTimeout(() => {
-      navigate('/result', { state: { result, quiz } });
+     setTimeout(() => {
+      navigate('result', { state: { result, quiz } });
     }, 800);
+
+    
   };
 
   if (loading) {
@@ -185,6 +187,7 @@ const QuizAttempt = () => {
           </button>
           
           {isLastQuestion ? (
+            <Link to={'result'}>
             <button
               onClick={handleSubmit}
               disabled={!hasAnsweredCurrent || submitting}
@@ -194,6 +197,7 @@ const QuizAttempt = () => {
             >
               {submitting ? 'Calculating...' : 'Finish Quiz'}
             </button>
+            </Link>
           ) : (
             <button
               onClick={handleNext}

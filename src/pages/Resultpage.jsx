@@ -6,7 +6,7 @@ const ResultPage = () => {
   const state = location.state || null;
 
   if (!state) {
-    return <Navigate to="quizflow/quizzes" />;
+    return <h3 className='text-center mt-40 w-screen '>loading....</h3>;
   }
 
   const { result, quiz } = state;
@@ -41,13 +41,13 @@ const ResultPage = () => {
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link 
-          to={`quizflow/quiz/${quiz.id}`}
+          to={`/quizflow/quizzes/${quiz.id}`}
           className="px-8 py-4 bg-white/10 text-white border border-white/10 rounded-xl font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2"
         >
           🔄 Retry Quiz
         </Link>
         <Link 
-          to="quizflow/quizzes"
+          to="/quizflow/quizzes"
           className="px-8 py-4 bg-[#22c55e] text-white rounded-xl font-bold hover:bg-[#16a34a] transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-500/20"
         >
           Explore More Quizzes
