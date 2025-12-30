@@ -6,7 +6,11 @@ const Resultpage = () => {
   const state = location.state || null;
 
   if (!state) {
-    return <h3 className='text-center mt-40 w-screen '>loading....</h3>;
+    return <div className="max-w-xl mx-auto px-4 py-32 text-center">
+        <div className="w-16 h-16 border-4 border-[#22c55e]/20 border-t-[#22c55e] rounded-full animate-spin mx-auto mb-6"></div>
+        <h2 className="text-2xl font-bold text-white mb-2">Loading Result...</h2>
+        
+      </div>;
   }
 
   const { result, quiz } = state;

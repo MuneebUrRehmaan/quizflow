@@ -110,7 +110,7 @@ const QuizList = () => {
                 <div className="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
                   <div className="flex flex-col">
                     <span className="text-[10px] text-gray-600 font-black uppercase tracking-widest">Length</span>
-                    <span className="text-sm text-gray-300 font-bold">20 Qs</span>
+                    <span className="text-sm text-gray-300 font-bold">10 Qs</span>
                   </div>
                   <Link
                     to={`${quiz.id}`}

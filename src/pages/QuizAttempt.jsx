@@ -95,7 +95,7 @@ const QuizAttempt = () => {
         <div className="text-6xl mb-6">⚠️</div>
         <h2 className="text-2xl font-bold text-white mb-4">{error || "Quiz not found"}</h2>
         <button 
-          onClick={() => navigate('quizflow/quizzes')}
+          onClick={() => navigate('/quizflow/quizzes')}
           className="px-8 py-3 bg-[#22c55e] text-[#020617] font-bold rounded-2xl cursor-pointer "
         >
           Return to Library
@@ -177,7 +177,7 @@ const QuizAttempt = () => {
           <button
             onClick={handlePrev}
             disabled={currentIdx === 0}
-            className={`px-6 py-3 rounded-2xl font-bold text-md uppercase tracking-widest transition-all ${
+            className={`sm:px-6 sm:py-3 px-4 py-2 rounded-2xl font-bold sm:text-md text-sm uppercase tracking-widest transition-all ${
               currentIdx === 0 
                 ? 'text-gray-700 cursor-not-allowed opacity-30' 
                 : 'text-gray-400 hover:text-white hover:bg-white/5'
@@ -202,7 +202,7 @@ const QuizAttempt = () => {
             <button
               onClick={handleNext}
               disabled={!hasAnsweredCurrent}
-              className={`px-6 py-3 bg-white text-[#020617] rounded-2xl font-bold text-lg uppercase tracking-widest transition-all ${
+              className={`sm:px-6 sm:py-3 px-4 py-2 rounded-2xl font-bold sm:text-md text-sm  bg-white text-[#020617]  uppercase tracking-widest transition-all ${
                 !hasAnsweredCurrent ? 'opacity-30 cursor-not-allowed' : 'hover:bg-[#22c55e] hover:text-white hover:scale-105 active:scale-95'
               }`}
             >

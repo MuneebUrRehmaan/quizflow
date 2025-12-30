@@ -26,14 +26,14 @@ const Navbar = () => {
               <Link 
               onClick={()=>{hash()}}
                 to="quizflow/" 
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === '/' ? 'text-[#22c55e]' : 'text-gray-300 hover:text-white'}`}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === '/quizflow/' ? 'text-[#22c55e]' : 'text-gray-300 hover:text-white'}`}
               >
                 Home
               </Link>
               <Link 
               onClick={()=>{hash()}}
                 to="quizflow/quizzes" 
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === '/quizzes' ? 'text-[#22c55e]' : 'text-gray-300 hover:text-white'}`}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === '/quizflow/quizzes' ? 'text-[#22c55e]' : 'text-gray-300 hover:text-white'}`}
               >
                 Explore Quizzes
               </Link>

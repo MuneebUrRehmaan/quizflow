@@ -30,7 +30,7 @@ export const quizService = {
     if (!profile) return null;
 
     try {
-      const url = `${BASE_URL}?apiKey=${API_KEY}&tags=${profile.tag}&limit=4`;
+      const url = `${BASE_URL}?apiKey=${API_KEY}&tags=${profile.tag}&limit=10`;
       const response = await fetch(url);
 
       if (!response.ok) {
